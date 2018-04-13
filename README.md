@@ -27,7 +27,7 @@ $ sudo crontab -e
 ```
 3. Now add the following example of configuration to the job
 ```sh
-# Ansiable: Send sms message every minute
+# Ansible: Send sms message every minute
 * * * * * * ./<directory_where_repo_downloaded>/python/sms_to.py >> /var/log/sms_to.log 2>&1
 ```
 
