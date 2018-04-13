@@ -1,24 +1,37 @@
-#!/bin/bash
-from utilities import sys_validation
-
 '''
     Description:
     The purpose of this script is to send a sms message 
-    to someone by changing configuration of initials parameters. 
+    to someone.
+
+    Notes:
+    This app uses twilio api to perform message sending.
+    For more documentation visit: https://www.twilio.com/docs/libraries/python
 '''
+#!/bin/bash
+
+from utilities import sys_validation
+from twilio.rest import Client
 
 def main():
-    FROM = 'xxx-xxx-xxxx'  # PHONE NUMBER WHERE THE MESSAGE WAS SENT
-    TO = 'xxx-xxx-xxxx'  # PHONE NUMBER TO SEND MESSAGE
+    FROM = '+xxxxxxxxxx'  # PHONE NUMBER WHERE THE MESSAGE WAS SENT
+    TO = '+xxxxxxxxxx'  # PHONE NUMBER TO SEND MESSAGE
     MSG = 'SAMPLE MESSAGE'  # MESSAGE TO SEND
+    ACCOUNT_SID = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # ACCOUNT SID
+    AUTH_TOKEN = 'your_auth_token' # AUTHENTICATION TOKEN
 
-    if send_sms(FROM, TO, MSG):
-        print('SUCCESS: The sms message was sent correctly!')
-    else:
-        print('ERROR: There was an issue trying to send the message!')
+    send_sms(FROM, TO, MSG, ACCOUNT_SID, AUTH_TOKEN):
 
+'''
+    This method calls twilio api to send a sms message
+'''
+def send_sms(from_, to, msg, account_sid, auth_token):
+    client = Client(account_sid, auth_token)
 
-def send_sms(frm, to, msg):
+    client.api.account.messages.create(
+        to,
+        from_,
+        msg)
+
     return True
 
 if __name__ == "__main__":

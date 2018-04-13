@@ -1,6 +1,11 @@
 # Dependencies <img src="../images/python-logo.png" width="50">
 
-To run any of the scripts on this directory you must need to have [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) :snake: >= `Version 2.7.x` (`x` is any number greater than `0`) installed on your machine.
+To run any of the scripts on this directory you must need to have [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) :snake: >= `Version 2.7.x` installed on your machine.
+
+Also the file `requirements.txt` contain a list of dependencies that must be install. You can run it by using the following command if you have [pip](https://pip.pypa.io/en/stable/installing/) installed:
+
+1. Open the console or terminal on the directory for python scripts
+2. Run the following command: `pip install -r requirements.txt`
 
 ### How to validate dependencies ?
 
