@@ -19,7 +19,7 @@ def main():
     ACCOUNT_SID = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # ACCOUNT SID
     AUTH_TOKEN = 'your_auth_token' # AUTHENTICATION TOKEN
 
-    send_sms(FROM, TO, MSG, ACCOUNT_SID, AUTH_TOKEN):
+    send_sms(FROM, TO, MSG, ACCOUNT_SID, AUTH_TOKEN)
 
 '''
     This method calls twilio api to send a sms message
