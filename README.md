@@ -38,4 +38,7 @@ For [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) users:
 ```sh
 > control schedtasks
 ```
-3. TODO - Complete the scripts config
+
+## TODO 
+
+Complete the scripts config and retake this project
