@@ -41,4 +41,4 @@ For [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) users:
 
 ## TODO 
 
-Complete the scripts config and retake this project
+Complete the scripts config and retake this project.
